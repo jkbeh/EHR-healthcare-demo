@@ -51,17 +51,17 @@ For example, in order for “/report generator” to generate prescriptions for 
 - average 10kb data per write to DB
 - average 10MB media upload per case to object storage
 
-### **Estimated usage**
+### **Estimated constant usage**
 - 10 GB of new data per month
-- 10kb per write * 1 million writes per month
-- 600GB of new data in next 5 years
-- Assume most UPDATE/writes are from existing cases instead of writes to new ones.
+    - 10kb per write * 1 million writes per month
+    - 600GB of new data in next 5 years
+    - Assume most UPDATE/writes are from existing cases instead of writes to new ones.
 - 2 TB of existing data on DB (10 years worth)
 - 0.4 writes per second on average
 - 10 reads per second on average
 - 400 GB of new media objects per month
-- 10MB upload * average 40,000 cases per month
-- 24 TB of media over next 5 years
+    - 10MB upload * average 40,000 cases per month
+    - 24 TB of media over next 5 years
 - 50 TB of existing media on object storage (10 years worth)
 
 ---
